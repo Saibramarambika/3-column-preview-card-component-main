@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+$font-family1: 'Big Shoulders Display', cursive;
+$font-family2: 'Lexend Deca', sans-serif;
+html{
+    font-size: 15px;
+}
+
+body{
+    margin: 2rem;
+}
+
+@mixin features {
+    padding: 4rem;
+    h2{
+        font-family: $font-family1;
+        color: white;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    p{
+        font-family: $font-family2;
+        color: white;
+    }
+    button{
+        border-radius: 2rem;
+        height: 3rem;
+        width: 8rem;
+        background-color: hsl(0, 0%, 95%);
+        border: none;
+        font-family: $font-family2;
+    } 
+}
+.sec1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 2rem 2rem 0px 0px;
+    @include features();
+    button{
+        color:hsl(31, 77%, 52%) ;
+    }
+}
+
+.sec2{
+    background-color: hsl(184, 100%, 22%);
+    button{
+        color:hsl(184, 100%, 22%) ;
+    }
+    @include features();
+}
+
+.sec3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 0px 2rem 2rem ;
+    button{
+        color:hsl(179, 100%, 13%) ;
+    }
+    @include features();
+}
+
+@media only screen and (min-width: 600px){
+    body{
+        display: grid;
+        grid-template-columns: repeat(1fr,3);
+        margin: 5rem;
+        font-size: 1.3rem;
+        .sec1{
+           grid-column: 1/2; 
+           border-radius: 1.3rem  0rem  0px 1.3rem;
+           p{
+               margin-bottom: 10rem;
+           }
+        }
+        .sec2{
+            grid-column: 2/3; 
+            p{
+                margin-bottom: 10rem;
+            }
+        }
+        .sec3{
+            grid-column: 3/4; 
+            border-radius: 0rem 1.3rem 1.3rem 0px ;
+            p{
+                margin-bottom: 10rem;
+            }
+        }
+    }
+}

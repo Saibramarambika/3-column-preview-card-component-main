@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 2rem;
+}
+
+.sec1 {
+  background-color: #e38826;
+  border-radius: 2rem 2rem 0px 0px;
+  padding: 4rem;
+}
+
+.sec1 h2 {
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.sec1 p {
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+}
+
+.sec1 button {
+  border-radius: 2rem;
+  height: 3rem;
+  width: 8rem;
+  background-color: #f2f2f2;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.sec1 button {
+  color: #e38826;
+}
+
+.sec2 {
+  background-color: #006970;
+  padding: 4rem;
+}
+
+.sec2 button {
+  color: #006970;
+}
+
+.sec2 h2 {
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.sec2 p {
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+}
+
+.sec2 button {
+  border-radius: 2rem;
+  height: 3rem;
+  width: 8rem;
+  background-color: #f2f2f2;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.sec3 {
+  background-color: #004241;
+  border-radius: 0px 0px 2rem 2rem;
+  padding: 4rem;
+}
+
+.sec3 button {
+  color: #004241;
+}
+
+.sec3 h2 {
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.sec3 p {
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+}
+
+.sec3 button {
+  border-radius: 2rem;
+  height: 3rem;
+  width: 8rem;
+  background-color: #f2f2f2;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (3)[1fr];
+        grid-template-columns: repeat(1fr, 3);
+    margin: 5rem;
+    font-size: 1.3rem;
+  }
+  body .sec1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    border-radius: 1.3rem  0rem  0px 1.3rem;
+  }
+  body .sec1 p {
+    margin-bottom: 10rem;
+  }
+  body .sec2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  body .sec2 p {
+    margin-bottom: 10rem;
+  }
+  body .sec3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    border-radius: 0rem 1.3rem 1.3rem 0px;
+  }
+  body .sec3 p {
+    margin-bottom: 10rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
